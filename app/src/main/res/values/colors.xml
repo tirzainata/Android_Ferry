@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#95607d8b</color>
+    <color name="colorPrimaryDark">#FF7e9800</color>
+    <color name="colorAccent">#99ff4081</color>
+    <color name="colorWhite">#e9ffffff</color>
+    <color name="colorBlack">#ab000000</color>
+    <color name="colorDarkGrey">#7b7b7b</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGreyTransparent">#904d4a4a</color>
+    <color name="colorLightBlue">#630389ff</color>
+    <color name="colorLightBlue1">#9e0078e2</color>
+
+    <color name="btnRippleEffect">#bef5f3f3</color>
+    <color name="btnSignIn">#b9b7b7b7</color>
+
+    <color name="baseRelease">#212121</color>
+    <color name="basePress">#fafafa</color>
+    <color name="ballRelease">#9e9e9e</color>
+</resources>

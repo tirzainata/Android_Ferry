@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "134234208513",
+    "firebase_url": "https://uberferry-c314b.firebaseio.com",
+    "project_id": "uberferry-c314b",
+    "storage_bucket": "uberferry-c314b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134234208513:android:2bea199a75224136",
+        "android_client_info": {
+          "package_name": "com.example.toshiba.ferry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134234208513-b1vutemvqbn6r9e8olsee0me2umj171c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toshiba.ferry",
+            "certificate_hash": "a4145df2d52db1a38793b4346aa0df166465c210"
+          }
+        },
+        {
+          "client_id": "134234208513-64iad99faenrm1032cs7576o4becouq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrXifou7Z05v9uyJ_YK_LFuXQsMtzjWpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134234208513-64iad99faenrm1032cs7576o4becouq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
