@@ -21,6 +21,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -92,6 +93,8 @@ public class Home extends FragmentActivity implements OnMapReadyCallback,
 	private TextView txtFare;
 	String pickUp = "";
 	String dest = "";
+
+	private RelativeLayout relativeLayout;
 
 	FirebaseDatabase database;
 
@@ -226,6 +229,7 @@ public class Home extends FragmentActivity implements OnMapReadyCallback,
 		dest = spnDest.getSelectedItem().toString();
 
 
+		relativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
 		btnBook = (Button)findViewById(R.id.btnGo);
 //		editPlace = (EditText)findViewById(R.id.edtPlace);
 //		editDest = (EditText)findViewById(R.id.edtDest);
@@ -267,6 +271,30 @@ public class Home extends FragmentActivity implements OnMapReadyCallback,
 			@Override
 			public void onNothingSelected(AdapterView<?> parent) {
 
+			}
+		});
+
+		btnBook.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				AlertDialog.Builder dialog = new AlertDialog.Builder(Home.this);
+				dialog.setTitle("Confirm Booking");
+				dialog.setMessage("Do you want create booking?");
+
+				dialog.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						Snackbar snackbar = Snackbar.make(relativeLayout, "Your booking has been created!", Snackbar.LENGTH_LONG);
+						snackbar.show();
+					}
+				});
+				dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						dialog.dismiss();
+					}
+				});
+				dialog.show();
 			}
 		});
 
